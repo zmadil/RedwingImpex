@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <span className="text-xl">🧂</span>
+              <span className="text-xl"></span>
               <div>
                 <p className="font-[family-name:var(--font-playfair)] font-bold text-base">
                   Redwing Impex
