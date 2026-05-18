@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { productCategories } from "@/data/products";
+import { withBasePath } from "@/lib/basePath";
 
 const containerVariants = {
   hidden: {},
@@ -55,7 +56,7 @@ export default function ProductCategoriesGrid() {
                   {/* Photo */}
                   <div className="relative h-52 overflow-hidden shrink-0">
                     <Image
-                      src={cat.coverImage}
+                      src={withBasePath(cat.coverImage)}
                       alt={cat.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

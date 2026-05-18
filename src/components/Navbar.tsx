@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { withBasePath } from "@/lib/basePath";
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -40,7 +41,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0">
-          <Image src="/images/logo.png" alt="Redwing Impex" width={30} height={46} className="object-contain" />
+          <Image src={withBasePath("/images/logo.png")} alt="Redwing Impex" width={30} height={46} className="object-contain" />
           <div className="leading-tight">
             <span
               className={`block font-[family-name:var(--font-playfair)] font-bold text-base transition-colors ${

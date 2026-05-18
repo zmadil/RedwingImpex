@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Globe } from "lucide-react";
 import { heroImage } from "@/data/products";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Hero() {
   return (
@@ -78,7 +79,7 @@ export default function Hero() {
         className="relative h-64 lg:h-auto"
       >
         <Image
-          src={heroImage}
+          src={withBasePath(heroImage)}
           alt="Himalayan salt products"
           fill
           className="object-cover"

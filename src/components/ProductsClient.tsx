@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { productCategories } from "@/data/products";
+import { withBasePath } from "@/lib/basePath";
 
 const ALL = "all";
 
@@ -38,7 +39,7 @@ function SlideshowCard({ cat }: { cat: (typeof productCategories)[number] }) {
             className="absolute inset-0"
           >
             <Image
-              src={cat.images[index]}
+              src={withBasePath(cat.images[index])}
               alt={`${cat.name} ${index + 1}`}
               fill
               className="object-cover"
