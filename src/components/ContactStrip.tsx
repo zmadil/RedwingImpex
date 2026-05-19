@@ -23,7 +23,7 @@ export default function ContactStrip() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-2xl mx-auto">
           {contacts.map((c, i) => (
             <motion.div
               key={c.email}
@@ -31,7 +31,7 @@ export default function ContactStrip() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-[var(--stone)] rounded-2xl p-8 text-center"
+              className="bg-[var(--stone)] rounded-2xl p-8 text-center w-full sm:w-72"
             >
               <div className="w-14 h-14 rounded-full bg-[var(--amber-light)] flex items-center justify-center mx-auto mb-4 text-2xl">
                 👤
