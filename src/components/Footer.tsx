@@ -56,24 +56,24 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="flex flex-col items-center">
             <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">
               Contact
             </h4>
             <ul className="space-y-4">
               {contacts.map((c) => (
-                <li key={c.email} className="text-sm">
+                <li key={c.email} className="text-sm text-center">
                   <p className="text-white font-medium">{c.name}</p>
                   <a
                     href={`tel:${c.phone.replace(/\s/g, "")}`}
-                    className="flex items-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
+                    className="flex items-center justify-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
                   >
                     <Phone size={12} />
                     {c.phone}
                   </a>
                   <a
                     href={`mailto:${c.email}`}
-                    className="flex items-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
+                    className="flex items-center justify-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
                   >
                     <Mail size={12} />
                     {c.email}
