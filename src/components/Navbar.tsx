@@ -40,8 +40,20 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0">
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <Image src={withBasePath("/images/logo.png")} alt="Redwing Impex" width={200} height={153} className="h-10 lg:h-12 w-auto object-contain" />
+          <div className="leading-tight">
+            <span
+              className={`block font-[family-name:var(--font-playfair)] font-bold text-base transition-colors ${
+                darkMode ? "text-white" : "text-[var(--dark)]"
+              }`}
+            >
+              Redwing Impex
+            </span>
+            <span className="block text-[10px] text-[var(--amber)] tracking-widest uppercase">
+              Himalayan Salt
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
