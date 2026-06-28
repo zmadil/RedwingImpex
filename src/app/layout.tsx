@@ -22,6 +22,20 @@ export const metadata: Metadata = {
     icon: "/images/logo.png",
     apple: "/images/logo.png",
   },
+  openGraph: {
+    title: "Redwing Impex — Premium Himalayan Salt",
+    description:
+      "Istanbul-based import & export company specializing in premium Himalayan salt products — edible salt, salt lamps, bath salt, culinary products, and more.",
+    images: [{ url: "/images/logo.png", width: 824, height: 954 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Redwing Impex — Premium Himalayan Salt",
+    description:
+      "Premium Himalayan salt products — edible salt, salt lamps, bath salt, and more. Global wholesale & private labeling.",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function RootLayout({
