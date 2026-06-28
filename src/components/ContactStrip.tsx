@@ -57,6 +57,15 @@ export default function ContactStrip() {
                   <Mail size={13} />
                   {c.email}
                 </a>
+                {c.email2 && (
+                  <a
+                    href={`mailto:${c.email2}`}
+                    className="flex items-center justify-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--amber)] transition-colors"
+                  >
+                    <Mail size={13} />
+                    {c.email2}
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
