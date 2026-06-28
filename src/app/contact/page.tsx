@@ -83,7 +83,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-[var(--dark)] text-sm">{c.name}</p>
-                    <p className="text-xs text-[var(--amber)]">{c.role}</p>
+
                   </div>
                 </div>
                 <div className="space-y-2">

@@ -195,9 +195,6 @@ export default function AboutPage() {
                 <h3 className="font-[family-name:var(--font-playfair)] font-bold text-xl text-[var(--dark)]">
                   {c.name}
                 </h3>
-                <p className="text-xs text-[var(--amber)] font-semibold uppercase tracking-widest mt-1 mb-5">
-                  {c.role}
-                </p>
                 <div className="space-y-3">
                   <a
                     href={`tel:${c.phone.replace(/\s/g, "")}`}

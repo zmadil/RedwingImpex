@@ -248,5 +248,6 @@ export const contacts = [
     phone: "+90 555 146 43 84",
     email: "info@redwingimpex.com",
     email2: "kashıf@redwıng.com",
+    role: "Sales Director",
   },
 ];

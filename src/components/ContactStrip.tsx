@@ -39,9 +39,6 @@ export default function ContactStrip() {
               <h3 className="font-[family-name:var(--font-playfair)] font-bold text-lg text-[var(--dark)]">
                 {c.name}
               </h3>
-              <p className="text-xs text-[var(--amber)] font-semibold uppercase tracking-wider mt-1 mb-4">
-                {c.role}
-              </p>
               <div className="space-y-2">
                 <a
                   href={`tel:${c.phone.replace(/\s/g, "")}`}
