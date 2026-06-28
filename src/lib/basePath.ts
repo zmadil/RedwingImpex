@@ -1,3 +1,3 @@
-const base = "/RedwingImpex";
+const base = "";
 
 export const withBasePath = (src: string) => `${base}${src}`;
