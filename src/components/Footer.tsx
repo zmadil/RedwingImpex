@@ -71,6 +71,15 @@ export default function Footer() {
                     <Phone size={12} />
                     {c.phone}
                   </a>
+                  {c.email2 && (
+                    <a
+                      href={`mailto:${c.email2}`}
+                      className="flex items-center justify-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
+                    >
+                      <Mail size={12} />
+                      {c.email2}
+                    </a>
+                  )}
                   <a
                     href={`mailto:${c.email}`}
                     className="flex items-center justify-center gap-1.5 text-gray-400 hover:text-[var(--amber)] transition-colors mt-1"
@@ -78,6 +87,12 @@ export default function Footer() {
                     <Mail size={12} />
                     {c.email}
                   </a>
+                  {c.address && (
+                    <p className="flex items-center justify-center gap-1.5 text-gray-400 mt-1">
+                      <MapPin size={12} className="shrink-0" />
+                      {c.address}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>

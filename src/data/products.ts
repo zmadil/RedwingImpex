@@ -247,7 +247,7 @@ export const contacts = [
     name: "Kashif Saeed",
     phone: "+90 555 146 43 84",
     email: "info@redwingimpex.com",
-    email2: "kashıf@redwıng.com",
-    role: "Sales Director",
+    email2: "kashif@redwingimpex.com",
+    address: "Depo Adres: Yeşilkent Mah. G-166 Sok , 2A. Avcılar, İstanbul",
   },
 ];

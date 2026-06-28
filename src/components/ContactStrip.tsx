@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { contacts } from "@/data/products";
 
 export default function ContactStrip() {
@@ -47,13 +47,6 @@ export default function ContactStrip() {
                   <Phone size={13} />
                   {c.phone}
                 </a>
-                <a
-                  href={`mailto:${c.email}`}
-                  className="flex items-center justify-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--amber)] transition-colors"
-                >
-                  <Mail size={13} />
-                  {c.email}
-                </a>
                 {c.email2 && (
                   <a
                     href={`mailto:${c.email2}`}
@@ -62,6 +55,19 @@ export default function ContactStrip() {
                     <Mail size={13} />
                     {c.email2}
                   </a>
+                )}
+                <a
+                  href={`mailto:${c.email}`}
+                  className="flex items-center justify-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--amber)] transition-colors"
+                >
+                  <Mail size={13} />
+                  {c.email}
+                </a>
+                {c.address && (
+                  <p className="flex items-center justify-center gap-2 text-sm text-[var(--muted)] mt-2">
+                    <MapPin size={13} className="shrink-0" />
+                    {c.address}
+                  </p>
                 )}
               </div>
             </motion.div>
