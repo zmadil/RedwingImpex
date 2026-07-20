@@ -1,12 +1,14 @@
-"use client";
+import type { Metadata } from "next";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+export const metadata: Metadata = {
+  alternates: { canonical: "https://redwingimpex.com" },
+};
 
-export default function HomRedirect() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace("/");
-  }, [router]);
-  return null;
+export default function HomeRedirect() {
+  return (
+    <>
+      <meta httpEquiv="refresh" content="0;url=/" />
+      <script dangerouslySetInnerHTML={{ __html: "window.location.replace('/')" }} />
+    </>
+  );
 }

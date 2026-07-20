@@ -1,12 +1,14 @@
-"use client";
+import type { Metadata } from "next";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+export const metadata: Metadata = {
+  alternates: { canonical: "https://redwingimpex.com/contact" },
+};
 
 export default function GetAQuoteRedirect() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace("/contact");
-  }, [router]);
-  return null;
+  return (
+    <>
+      <meta httpEquiv="refresh" content="0;url=/contact" />
+      <script dangerouslySetInnerHTML={{ __html: "window.location.replace('/contact')" }} />
+    </>
+  );
 }
